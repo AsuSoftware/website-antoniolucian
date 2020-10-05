@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.contenitor {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-image: url("../../assets/img/container-home.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+
+    #particles-js {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .description {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 33px;
+            color: #fff;
+        }
+
+        p {
+            margin-top: 20px;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300;
+            color: #fff;
+        }
+
+        span {
+            color: #037FFF;
+        }
+    
+        .social {
+            display: flex;
+            margin-top: 20px;
+    
+            .box {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                border: 2px solid #2E344E;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+                cursor: pointer;
+
+                i {
+                    font-size: 25px;
+                    cursor: pointer;
+                    color: #fff;
+                }
+            }
+
+            .box:hover {
+                transition-duration: .5s;
+                border: 2px solid #2e55ff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contenitor {
+        .description {
+            margin: 0 10px;
+            h2 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .contenitor {
+        .description {
+            .social {
+                .box {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+} 

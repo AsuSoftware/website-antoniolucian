@@ -1,0 +1,37 @@
+.contenitor {
+  width: 100%;
+  display: flex;
+
+  .cont {
+    width: calc(100% - 300px);
+    position: absolute;
+    left: 300px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .contenitor {
+    .cont {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .contenitor {
+    .cont {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contenitor {
+    .cont {
+      width: 100%;
+      left: 0;
+    }
+  }
+}

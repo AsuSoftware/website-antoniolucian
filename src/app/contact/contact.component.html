@@ -1,0 +1,67 @@
+<div class="contenitor-section">
+    <div class="contact-wrapper-section">
+        <div class="title">
+            <h2>CONTACT ME</h2>
+            <span>CONTACT ME</span>
+        </div>
+        <div class="section-contact">
+            <div class="contenitor-contact">
+                <div class="contact">
+                    <h4>Get In Touch</h4>
+                    <form action="" method="">
+                        <div class="input">
+                            <label for="contact-form-name">Enter your name*</label>
+                            <input type="text" name="name" id="contact-form-name">
+                            <span>
+                                <b>*Your name is required*</b>
+                            </span>
+                        </div>
+                        <div class="input">
+                            <label for="contact-form-email">Enter your email*</label>
+                            <input type="text" name="email" id="contact-form-email">
+                        </div>
+                        <div class="input">
+                            <label for="contact-form-subject">Enter your subject*</label>
+                            <input type="text" name="subject" id="contact-form-subject">
+                        </div>
+                        <div class="input">
+                            <label for="contact-form-message">Enter your subject*</label>
+                            <textarea id="contact-form-message" name="message" cols="30" rows="6"></textarea>
+                        </div>
+                        <div class="input">
+                            <button type="submit">Send Mail</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="contenitor-info">
+                <div class="contact-info">
+                    <div class="info">
+                        <span class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <div class="content">
+                            <h6>Email</h6>
+                            <p *ngIf="!viewEmailState">
+                                <!--aici sa pun un ngIf pentru click, si in locul lui sa afiscez celalt p de jos-->
+                                <a (click)="viewEmail()">Press here to view</a>
+                            </p>
+                            <p *ngIf="viewEmailState">
+                                <a href="mailto:web.antonio.popa@gmail.com">web.antonio.popa@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <span class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <div class="content">
+                            <h6>Address</h6>
+                            <p>Rome, Italy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

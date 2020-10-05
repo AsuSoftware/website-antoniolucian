@@ -1,0 +1,18 @@
+<nav class="nav-bar" id="nav">
+    <button (click)="onClickAction()">
+        <i class="fas fa-bars" id="iconBtn"></i>
+    </button>
+    <div class="profile-photo">
+        <img src="../assets/img/me.jpg" alt="Antonio's photo">
+    </div>
+    <ul class="links">
+        <a (click)="onClickAction()" routerLink="/home" routerLinkActive="active">HOME</a>
+        <a (click)="onClickAction()" routerLink="/about" routerLinkActive="active">ABOUT</a>
+        <a (click)="onClickAction()" routerLink="/resume" routerLinkActive="active">RESUME</a>
+        <a (click)="onClickAction()" routerLink="/projects" routerLinkActive="active">PROJECTS</a>
+        <a (click)="onClickAction()" routerLink="/photos" routerLinkActive="active">PHOTOS</a>
+        <a (click)="onClickAction()" routerLink="/blog" routerLinkActive="active">BLOG</a>
+        <a (click)="onClickAction()" routerLink="/contact" routerLinkActive="active">CONTACT</a>
+    </ul>
+    <footer>&copy; Copyright 2020 Asu Software</footer>
+</nav>
